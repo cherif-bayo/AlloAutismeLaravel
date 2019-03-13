@@ -10886,7 +10886,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #646464;
+  color: black;
   font-weight: 300;
   line-height: 1em;
   margin: 0 0 0.5em 0;
@@ -11804,6 +11804,7 @@ body.landing #page-wrapper {
   background-position: static;
   background-repeat: no-repeat;
   min-height: 100%;
+  background-image: url("/images/lv.jpeg");
   background-color: #666;
   color: #fff;
   padding: 12em 0 20em 0;
@@ -11950,6 +11951,12 @@ body.landing #main {
   width: inherit;
 }
 
+#declaration_autiste {
+  color: black;
+  text-align: center;
+  width: inherit;
+}
+
 #cta h2,
 #cta h3,
 #cta h4,
@@ -11970,6 +11977,12 @@ body.landing #main {
   box-shadow: none;
   background: #fff;
   color: #00BFFF;
+}
+
+#cta input[type=submit]:hover {
+  background: #00BFFF;
+  color: #fff;
+  border: 3px solid #fff;
 }
 
 #cta input[type=text],
@@ -12639,6 +12652,10 @@ display: inline;
   transition: all 0.1s linear;
 }
 
+input[type=radio] {
+  -webkit-appearance: radio;
+}
+
 .panel-login input:hover,
 .panel-login input:focus {
   outline: none;
@@ -12925,6 +12942,10 @@ header #myNavbar a {
   color: #00B8FF;
   font-weight: 400;
   transition: all 1s ease-out;
+}
+
+.navigation {
+  border-bottom: 3px solid #fff;
 }
 
 .w3-button {

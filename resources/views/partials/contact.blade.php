@@ -15,26 +15,32 @@
             <p class="adress"><span class="fas fa-envelope"></span> baymed2007@gmail.com</p>
         </div>
         <div class="col-sm-6 ">
-            <form action="" method="post" id="sendMessage">
-            <div class="row">
-                <div class="col-sm-12 form-group">
-                <label for="namecontact">Nom:</label>
-                <input class="form-control" id="namecontact" name="name" placeholder="Votre nom" type="text" required>
+                    @if(session()->has('message'))
+                        <div class="alert alert-success">
+                            {{ session()->get('message') }}
+                        </div>
+                    @endif
+            <form action="/contact" method="post" id="sendMessage">
+                @csrf
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                        <label for="namecontact">Nom:</label>
+                        <input class="form-control" id="namecontact" name="name" placeholder="Votre nom" type="text" required>
+                        </div>
+                        <div class="col-sm-12 form-group">
+                        <label for="emailcontact">Email:</label>
+                        <input class="form-control" id="emailcontact" name="email" placeholder=" Votre email" type="email" required>
+                        </div>
+                        <div class="col-sm-12 form-group">
+                        <label for="commentcontact">Message:</label>
+                        <textarea class="form-control" id="commentcontact" name="comments" placeholder="Message" rows="8" cols="20"></textarea><br>
+                        </div>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                        <input class="btn btn-default " type="submit" value="Envoyer"/>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-12 form-group">
-                <label for="emailcontact">Email:</label>
-                <input class="form-control" id="emailcontact" name="email" placeholder=" Votre email" type="email" required>
-                </div>
-                <div class="col-sm-12 form-group">
-                <label for="commentcontact">Message:</label>
-                <textarea class="form-control" id="commentcontact" name="comments" placeholder="Message" rows="8" cols="20"></textarea><br>
-                </div>
-            <div class="row">
-                <div class="col-sm-12 form-group">
-                <input class="btn btn-default " type="submit" value="Envoyer"/>
-                </div>
-            </div>
-        </div>
         </form>
 
         </div>

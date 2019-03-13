@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'AlloAutisme') }}</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/AAFav.png') }}" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('css')
@@ -17,9 +18,13 @@
 
 <!-- Include Content -->
 @yield('content')
-
+<section id="banner" class="imageFond" >
+</section>
 <!-- Include Contact -->
 @include('partials.contact')
+
+<section id="banner" class="imageFond" >
+</section>
 
 <!-- Include Footer -->
 @include('partials.footer')

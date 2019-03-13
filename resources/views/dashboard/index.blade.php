@@ -4,9 +4,7 @@
 
 <div class="box special features particulier">
   <h1>Tableau de bord</h1>
-  <div class="alert alert-success successMessage " role="alert">
-    
-  </div>
+ 
 
   <div class="blocgeneral">
 
@@ -15,7 +13,7 @@
     </div>
    
       <div class="petitbloc">
-        <a href="#"><span class="petitbloctitle">Déclarer</span></a>
+        <a href="#"><span class="petitbloctitle">Déclaration(s)</span></a>
       </div>
       <div class="petitbloc">
         <a href="#"><span class="petitbloctitle">Demandes</span></a>
