@@ -2473,4 +2473,61 @@ text-align: center;
  .verificationEmail{
   color: blue;
 }
+.boxev {
+
+  background-color: #eaeaea;
+
+  padding: 2em;
+
+  margin-bottom: 1em;
+
+}
+.area {
+  background-color: white;
+  box-shadow: 0 0 1em #CCC;
+  padding: 1em;
+  position: relative;
+}
+
+.placerestant {
+  position: absolute;
+  top: 6.8em;
+}
+.area h6 {
+  font-size: 1.5em;
+}
+
+.area h6::after {
+  content: ' ';
+  display: block;
+  height: .2em;
+  background: linear-gradient(to right, #00B8FF, #5495ad);
+}
+
+.area h5::before {
+  margin-top: 1.4em;
+  content: ' ';
+  display: block;
+  height: .2em;
+  background: linear-gradient(to right, #00B8FF, #5495ad);
+}
+
+.ajoutEvenement a{
+  color: #00B8FF;
+}
+.ajoutEvenement a:hover{
+  color: #5495ad;
+}
+.ajoutEvenement p{
+  color: #00B8FF;
+}
+
+.accederEvenement a{
+  background: linear-gradient(to right, #00B8FF, #5495ad);
+}
+.accederEvenement a:hover{
+  background: linear-gradient(to right,  #5495ad, #00B8FF,);
+  font-weight: bold;
+}
+
 

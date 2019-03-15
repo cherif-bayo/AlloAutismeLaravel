@@ -30,7 +30,7 @@
                 <!-- /.dropdown-user -->
                 </div>
             @else
-                <a href="" class="w3-button naviguer">Evènements</a>
+                <a href="/Events" class="w3-button naviguer">Evènements</a>
                 <a href="/declarations/create" class="w3-button naviguer">Déclarer Autiste</a>
                 <div class="w3-dropdown-hover">
                     <a href="#" class="w3-button naviguer">@lang('Mon Compte') <i class="fa fa-caret-down"></i></a>
