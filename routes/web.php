@@ -30,7 +30,7 @@ Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 
 //  Profile Routes
-Route::get('/profile', 'ProfileController@index')->name('profile')->middleware('auth');
+Route::resource('profile', 'ProfileController')->middleware('auth');
 
 //  Dashboard Routes
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard')->middleware('auth');
@@ -40,6 +40,9 @@ Route::resource('declarations', 'DeclarationsController')->middleware('auth');
 
 //  Events Route
 Route::resource('Events', 'EventsController')->middleware('auth');
+
+//  Posts Route
+Route::resource('posts', 'PostsController')->middleware('auth');
 
 //  Contact Route
 Route::post('/contact', 'ContactController@store');

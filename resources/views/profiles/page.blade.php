@@ -1,5 +1,7 @@
 @extends('layouts.app')
 @section('content')
+
+
         <!-- Google GeoChart pour indiquer le nombre d'autiste par ville -->
         <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
             <script type='text/javascript'>
@@ -36,8 +38,20 @@
 
             </script>
             <!--End GeoChart -->
+            
 
         <section id="main" class="container mt-3 profile">
+                @include('exprimer')
+            <div class="postNotification pull-right">
+                @if(session()->has('message'))
+                    <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+                    {{ session()->get('message') }}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+                @endif
+            </div>
         
         <section class="box special">
             <header class=" profile">
@@ -76,8 +90,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                       
+                        <tr>                      
                             <th scope="row">{{ Auth::user()->last_name }}</th>
                             <td>{{ Auth::user()->first_name }}</td>
                             <td>{{ Auth::user()->created_at }}</td>
@@ -85,8 +98,7 @@
                             <td>0{{ Auth::user()->phone_number }}</td>
                             <td>{{ Auth::user()->region }}</td>
                             <td>{{ Auth::user()->postal_code }}</td>
-                            <td>{{ Auth::user()->town }}</td>
-                           
+                            <td>{{ Auth::user()->town }}</td>                          
                         </tr>
                         </tbody>
                     </table>

@@ -1,17 +1,27 @@
 @extends('layouts.app')
 @section('content')
 
-
+@include('exprimer')
 
 <div class="box special features sign-in-par">
+    
     <div class="row mention mb-3">
 <div class="container" id="declaration_autiste">
+
+   
+  
   <h3>Formulaire de déclaration</h3>
-                   @if(session()->has('message'))
-                        <div class="alert alert-success">
-                            {{ session()->get('message') }}
-                        </div>
-                    @endif
+           
+                @if(session()->has('message'))
+                    <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+                    {{ session()->get('message') }}
+                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                @endif
+        
+                   
             <div class="declationQuestion">
                     <h4 class="mb-3">Vous souhaitez déclarer ?</h4>
                     <div class="choicelink">

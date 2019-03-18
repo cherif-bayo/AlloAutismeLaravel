@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('content')
 
+@include('exprimer')
+
 
 <div class="box special features particulier">
   <h1>Tableau de bord</h1>
