@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/presentation', function () {
+    return view('presentation');
+});
 
 Route::get('/presentation', function () {
     return view('presentation');
@@ -28,6 +31,7 @@ Auth::routes(['verify' => true]);
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
+
 
 //  Profile Routes
 Route::resource('profile', 'ProfileController')->middleware('auth');

@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
 <div class="box special features sign-in-par">
 			<div class="row mention mb-3">

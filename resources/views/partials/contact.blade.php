@@ -24,16 +24,16 @@
                 @csrf
                     <div class="row">
                         <div class="col-sm-12 form-group">
-                        <label for="namecontact">Nom:</label>
-                        <input class="form-control" id="namecontact" name="name" placeholder="Votre nom" type="text" required>
+                        <label for="contactName">Nom:</label>
+                        <input class="form-control" id="contactName" name="name" placeholder="Votre nom" type="text" required>
                         </div>
                         <div class="col-sm-12 form-group">
                         <label for="emailcontact">Email:</label>
                         <input class="form-control" id="emailcontact" name="email" placeholder=" Votre email" type="email" required>
                         </div>
                         <div class="col-sm-12 form-group">
-                        <label for="commentcontact">Message:</label>
-                        <textarea class="form-control" id="commentcontact" name="comments" placeholder="Message" rows="8" cols="20"></textarea><br>
+                        <label for="contactComment">Message:</label>
+                        <textarea class="form-control" id="contactComment" name="comments" placeholder="Message" rows="8" cols="20"></textarea><br>
                         </div>
                     <div class="row">
                         <div class="col-sm-12 form-group">
