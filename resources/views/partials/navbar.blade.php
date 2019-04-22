@@ -10,6 +10,7 @@
                     Bienvenue {{ Auth::user()->last_name }}
                 @endguest     
           </span>
+          
                 <a href="/" class="w3-button naviguer accueil ">Accueil</a>
                 <a href="/presentation" class="w3-button naviguer">présentation</a>
                 <a href="/cgu" class="w3-button naviguer">Cgu</a>
