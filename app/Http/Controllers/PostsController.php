@@ -42,6 +42,7 @@ class PostsController extends Controller
 
         $post->title = request('title');
         $post->description = request('description');
+        $post->user_first_name = request('user_first_name');
         
 
         $post->save();

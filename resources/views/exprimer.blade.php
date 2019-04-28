@@ -19,22 +19,23 @@
             
             <!-- Modal body -->
             <div class="modal-body">
-            <form action="/posts" method="post" id="sendMessage">
+            <form action="/posts" method="post" id="sendMessage"> 
                 @csrf
                     <div class="row">
-                        <div class="col-sm-12 form-group">
+                        <div class="col-sm-12 col-md-10 offset-md-1 form-group">
                         <label for="namecontact">Titre:</label>
                         <input class="form-control" id="namecontact" name="title" placeholder="Titre" type="text" required>
                         </div>
-                        <div class="col-sm-12 form-group">
+                        <div class="col-sm-12 col-md-10 offset-md-1 form-group">
                         <label for="commentcontact">Message:</label>
                         <textarea class="form-control" id="commentcontact" name="description" placeholder="Votre Message" rows="8" cols="20"></textarea><br>
                         </div>
                     <div class="row">
-                        <div class="col-sm-12 form-group">
+                        <div class="col-sm-12 col-md-10 offset-md-1 form-group">
                         <input class="btn btn-primary " type="submit" value="Soumettre"/>
                         </div>
                     </div>
+                    <input type="hidden" value="{{ Auth::user()->first_name }}" name="user_first_name">
                 </div>
             </form>
             </div>

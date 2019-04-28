@@ -53,50 +53,71 @@
   </section>
 
   <section class="box special features">
-  
-    <!--- \\\\\\\Post-->
-    @foreach ($posts as $post)
-      <div class="card gedf-card">
-          <div class="card-header">
-              <div class="d-flex justify-content-between align-items-center">
-                  <div class="d-flex justify-content-between align-items-center">
-                      <div class="mr-2">
-                          <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
-                      </div>
-                      <div class="ml-2">
-                          <div class="h5 m-0">{{ Auth::user()->last_name }}</div>
-                          <div class="h7 text-muted">{{ $post->title  }}</div>
-                      </div>
-                  </div>
-                  <div>
-                      <div class="dropdown">
-                          <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <i class="fa fa-ellipsis-h"></i>
-                          </button>
-                          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
-                              <a class="dropdown-item" href="#">Supprimer</a>
-                              <a class="dropdown-item" href="#">Editer</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
 
-          </div>
-          <div class="card-body">
-              <div class="text-muted h7 mb-2"> <i class="fas fa-clock"></i>10 min ago</div>
-              <a class="card-link" href="#">
-                  <h5 class="card-title">{{ $post->title  }}</h5>
-              </a>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mr-auto">
+                  <h3 class="text-primary text-left">Dernières publications</h3>
+                    <!--- \\\\\\\Displaying post on home page -->
+            @foreach ($posts as $post)
+            <div class="card gedf-card">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="mr-2">
+                                <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
+                            </div>
+                            <div class="ml-2">
+                                <div class="h5 m-0 text-primary">{{ $post->user_first_name  }}</div>
+                                <div class="h7 text-muted">{{ $post->title  }}</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="dropdown">
+                                <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-h"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right bg-light" aria-labelledby="gedf-drop1">
+                                    <a class="dropdown-item text-primary" href="#">Supprimer</a>
+                                    <a class="dropdown-item text-primary" href="#">Editer</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-              <p class="card-text">{{ $post->description  }}</p>
-          </div>
-          <div class="card-footer">
-              <a href="#" class="card-link"><i class="fas fa-thumbs-up"></i> Aimer</a>
-              <a href="#" class="card-link"><i class="fa fa-comment"></i> Commenter</a>
-              <a href="#" class="card-link"><i class="fas fa-share"></i> Partager</a>
-          </div>
+                </div>
+                <div class="card-body">
+                    <div class="text-muted h7 mb-2"> <i class="fas fa-clock"></i>10 min ago</div>
+                    <a class="card-link" href="#">
+                        <h5 class="card-title">{{ $post->title  }}</h5>
+                    </a>
+                    <p class="card-text">{{ $post->description  }}</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="card-link text-primary"><i class="fas fa-thumbs-up"></i> Aimer</a>
+                    <a href="#" class="card-link text-primary"><i class="fa fa-comment"></i> Commenter</a>
+                    <a href="#" class="card-link text-primary"><i class="fas fa-share"></i> Partager</a>
+                </div>
+            </div><br/>
+          @endforeach
+        </div>
+        <div class="col-md-5">
+            <h3 class="text-primary text-left">Prochains évènements</h3>
+            <div class="col-10 area">
+                
+                <h6>10 Membres</h6>
+                <p>Créer par cherif</p>
+                <div class="text-right accederEvenement">
+                    <a href="#" class="btn btn-dark">Accéder</a>
+                </div>
+      
+            </div>
+        </div>
+            
       </div>
-    @endforeach
+    </div>
+  
+   
 
   </section>
 

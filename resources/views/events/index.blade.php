@@ -56,42 +56,37 @@
     {{-- include create event form --}}
     @include('createEvent')
     
-    <div class="container-fluid">
+    <div class="container ml-xs-2">
     <div class="row boxev">
-        <div class="col-12 col-md-3">
-        
-        </div>
-        <div class="col-12 col-md-6 box-content">
+        <div class="col-md-6 box-content">
             <h2>Interphase pessac</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ea architecto placeat, natus quos hic, facilis nam fugit veniam atque explicabo error sunt animi totam perferendis! Vitae error at pariatur?</p>
-        
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ea architecto placeat, natus quos hic, facilis nam fugit veniam atque explicabo error sunt animi totam perferendis! Vitae error at pariatur?</p>       
         </div>
-        <div class="col-12 col-md-3 area">
+        <div class="col-md-5 area ml-lg-auto">
             <h6>10 Membres</h6>
             <p>Créer par cherif</p>
+            <p>43 rue Léon Jouhaux</p>
+            <p>à 15h</p>
             <div class="text-right accederEvenement">
                 <a href="#" class="btn btn-dark">Accéder</a>
             </div>
   
         </div>
-
+    </div> 
     </div>
-    
-    </div>
-
-    <div class="container-fluid">
+    <div class="container">
     <div class="row boxev">
-        <div class="col-12 col-md-3">
-        
-        </div>
-        <div class="col-12 col-md-6 box-content">
+       
+        <div class="col-md-6 box-content">
             <h2>Vegan</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ea architecto placeat, natus quos hic, facilis nam fugit veniam atque explicabo error sunt animi totam perferendis! Vitae error at pariatur?</p>
         
         </div>
-        <div class="col-12 col-md-3 area">
+        <div class="col-md-5 area ml-lg-auto">
             <h6>10 Membres</h6>
             <p>Créer par cherif</p>
+            <p>20 rue D'Aupérie</p>
+            <p>à 15h</p>
             <div class="text-right accederEvenement">
                 <a href="#" class="btn btn-dark">Accéder</a>
             </div>
